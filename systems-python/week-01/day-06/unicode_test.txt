@@ -1,0 +1,4 @@
+English: Hello
+Arabic: مرحبا
+Chinese: 你好
+Emoji: 🔥
