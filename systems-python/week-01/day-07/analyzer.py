@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+
 def format_size(size_in_bytes):
     if size_in_bytes < 1024:
         return str(size_in_bytes) + " B"
@@ -9,6 +10,7 @@ def format_size(size_in_bytes):
     else:
         size_in_mb = size_in_bytes / (1024 * 1024)
         return str(round(size_in_mb, 2)) + " MB"
+    
 def validate_path(directory_path):
     if not directory_path.exists():
         print("Error: Path does not exist")
@@ -17,6 +19,8 @@ def validate_path(directory_path):
         print("Error: Path is not a directory")
         return False
     return True
+
+
 def analyze_directory(directory_path):
     total_files = 0
     total_size = 0
@@ -45,6 +49,8 @@ def analyze_directory(directory_path):
         print("Error: Unable to access directory contents (permission issue).")
         return None
     return total_files, total_size, largest_file, largest_file_size, extension_type_dictionary
+
+
 def print_report(directory_path, total_files, total_size, largest_file, largest_file_size, extension_type_dictionary, summary_mode):
     if summary_mode:
         print(
@@ -70,6 +76,7 @@ def print_report(directory_path, total_files, total_size, largest_file, largest_
     print("\nFile type breakdown:")
     for file_extension in extension_type_dictionary:
         print(file_extension, ":", extension_type_dictionary[file_extension])
+
 def main():
     if len(sys.argv) < 2:
         print("Usage: python analyzer.py <path> [--summary]")
@@ -92,4 +99,5 @@ def main():
         extension_type_dictionary,
         summary_mode
     )
+
 main()
