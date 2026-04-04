@@ -1,1 +1,11 @@
 .DS_Store
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+tempCodeRunnerFile.py
+
+# Generated lesson artifacts
+systems-python/week-02/day-10/big_text.txt
+systems-python/week-02/day-10/large_test_file.txt
+systems-python/week-02/day-10/server.log
