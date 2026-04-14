@@ -5,6 +5,9 @@ venv/
 .venv/
 tempCodeRunnerFile.py
 server.log
+.pytest_cache/
+.coverage
+.coverage.*
 
 # Generated lesson artifacts
 systems-python/week-02/day-10/big_text.txt
