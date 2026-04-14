@@ -8,6 +8,7 @@ server.log
 .pytest_cache/
 .coverage
 .coverage.*
+cutabove.db
 
 # Generated lesson artifacts
 systems-python/week-02/day-10/big_text.txt
