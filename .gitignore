@@ -9,6 +9,7 @@ server.log
 .coverage
 .coverage.*
 cutabove.db
+bank.db
 
 # Generated lesson artifacts
 systems-python/week-02/day-10/big_text.txt
