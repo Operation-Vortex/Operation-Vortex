@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'presentation/pages/barbers_screen.dart';
+import 'presentation/pages/products_screen.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -11,6 +11,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(title: 'CutAbove', home: BarbersScreen());
+    return const MaterialApp(title: 'Demo App', home: ProductsScreen());
   }
 }
